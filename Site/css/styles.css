@@ -1,0 +1,368 @@
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    
+    .form-contact {
+        width: 100%;
+        font-family: "Arial", Times, serif;
+    }
+    
+    .form-contact-input {
+        width: 100%;
+        color: #292929;
+        font-size: 18px;
+        background-color: #E9E9E9;
+        border: 1px solid #E9E9E9;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 40px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        text-indent: 20px;
+        transition: 1s;
+    }
+    
+    .form-contact-textarea {
+        width: 100%;
+        color: #292929;
+        font-size: 18px;
+        background-color: #E9E9E9;
+        border: 1px solid #E9E9E9;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        height: 100px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ccc;
+        border-left: 1px solid #ccc;
+        text-indent: 20px;
+        padding-top: 16px;
+        padding-left: 0;
+        padding-right: 0;
+        font-family: "Arial", Times, serif;
+        transition: 1s;
+    }
+    
+    .form-contact-button {
+        width: 100%;
+        font-size: 18px;
+        border-radius: 4px;
+        color: #fff;
+        height: 40px;
+        opacity: .8;
+        margin-bottom: 20px;
+        cursor: pointer;
+        background: #B22222;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #500707;
+        border-right: 1px solid #500707;
+        transition: 1s;
+    }
+    
+    .form-contact-button:hover {
+        opacity: 1;
+    }
+    
+    .contact {
+        width: 100%;
+        height: 200px;
+        font-family: "Arial", Times, serif;
+        background-color: #E9E9E9;
+        border: 1px solid #E9E9E9;
+        text-align: center;
+        margin-top: 10px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        transition: 1s;
+    }
+    
+    .grid-4 {
+        width: 15px;
+        height: 15px;
+    }
+    
+    body {
+        background: #ff5f6d;
+        background: -webkit-linear-gradient(to right, #00001a, #00004d);
+        background: linear-gradient(to right, #00001a, #00004d);
+        min-height: 100vh;
+        color: #0000cc;
+        font-family: 'Sanchez', serif
+    }
+    
+    #button-addon1 {
+        color: #ffc371
+    }
+    
+    i {
+        font-size: 20px
+    }
+    
+    .form-control::placeholder {
+        font-size: 0.95rem;
+        color: #aaa;
+        font-style: italic
+    }
+    
+    .form-control.shadow-0:focus {
+        box-shadow: none
+    }
+    
+    .display-3 {
+        font-family: 'Sanchez', serif
+    }
+    
+    p {
+        font-family: 'Tajawal', sans-serif
+    }
+    
+    .lead {
+        font-family: 'Sanchez 200', serif
+    }
+    
+    .btn:hover,
+    .btn:focus {
+        outline: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+    
+    .imgAtt {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .divImg {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .div-card {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 2px;
+        padding: 2px;
+        background-color: white;
+    }
+    
+    .div-Fotos {
+        width: 100%;
+        height: 80%;
+    }
+    .centro{
+        text-align:center;
+      }
+      
+      .container {
+          width: 50%;
+          margin: 0 auto;
+          margin-top: 50px;
+        }
+        
+        .form-contact {
+          width: 100%;
+          font-family: "Arial", Times, serif;
+        }
+        
+        .form-contact-input {
+          width: 100%;
+          color: #292929;
+          font-size: 18px;
+          background-color: #E9E9E9;
+          border: 1px solid #E9E9E9;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          height: 40px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          text-indent: 20px;
+          transition: 1s;
+        }
+        
+        .form-contact-textarea {
+          width: 100%;
+          color: #292929;
+          font-size: 18px;
+          background-color: #E9E9E9;
+          border: 1px solid #E9E9E9;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          height: 100px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #ccc;
+          border-left: 1px solid #ccc;
+          text-indent: 20px;
+          padding-top: 16px;
+          padding-left: 0;
+          padding-right: 0;
+          font-family: "Arial", Times, serif;
+          transition: 1s;
+        }
+        
+        .form-contact-button {
+          width: 100%;
+          font-size: 18px;
+          border-radius: 4px;
+          color: #fff;
+          height: 40px;
+          opacity: .8;
+          margin-bottom: 20px;
+          cursor: pointer;
+          background: #B22222;
+          display: block;
+          border: none;
+          border-bottom: 1px solid #500707;
+          border-right: 1px solid #500707;
+          transition: 1s;
+        }
+        
+        .form-contact-button:hover {
+          opacity: 1;
+        }
+        .contact{
+          width: 100%;
+          height: 200px;
+          font-family: "Arial", Times, serif;
+          background-color: #E9E9E9;
+          border: 1px solid #E9E9E9;
+          text-align: center;
+          margin-top: 10px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          border-radius: 5px;
+          transition: 1s;
+        }
+        .grid-4{
+          width: 15px;
+          height: 15px;
+        }
+        body {
+          background: #ff5f6d;
+          background: -webkit-linear-gradient(to right, #00001a, #00004d);
+          background: linear-gradient(to right, #00001a, #00004d);
+          min-height: 100vh;
+          color: #0000cc;
+          font-family: 'Sanchez', serif
+        }
+          #button-addon1 {
+            color: #ffc371
+        }
+      
+        i {
+            font-size: 20px
+        }
+      
+        .form-control::placeholder {
+            font-size: 0.95rem;
+            color: #aaa;
+            font-style: italic
+        }
+      
+        .form-control.shadow-0:focus {
+            box-shadow: none
+        }
+      
+        .display-3 {
+            font-family: 'Sanchez', serif
+        }
+      
+        p {
+            font-family: 'Tajawal', sans-serif
+        }
+      
+        .lead {
+            font-family: 'Sanchez 200', serif
+        }
+        
+        .width{
+            width: 15%;
+        }
+      
+        .height{
+          height: 5%;
+        }
+      
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+      
+        .img {
+          height: 150px;
+          width: 150px;
+        }
+        
+        .btnVermelho {
+          width: 20%;
+          font-size: 18px;
+          border-radius: 4px;
+          color: #fff;
+          height: 40px;
+          opacity: .8;
+          margin-bottom: 20px;
+          cursor: pointer;
+          background: #B22222;
+          display: block;
+          border: none;
+          border-bottom: 1px solid #500707;
+          border-right: 1px solid #500707;
+          transition: 1s;
+        }
+      
+        .btnPreto {
+          width: 64%;
+          font-size: 18px;
+          border-radius: 4px;
+          color: #fff;
+          height: 40px;
+          opacity: .8;
+          margin-bottom: 20px;
+          cursor: pointer;
+          background: #000000;
+          display: block;
+          border: none;
+          transition: 1s;
+        }
+      
+        .ajusteBtn {
+          border-radius: 17px;
+          background-color: #00004b;
+          color: white;
+          padding: 7px;
+          padding-right: 10;
+          padding-left: 10;
+      }
+      
+      .branco {
+        color: white;
+      }
+      
+      h2 {
+        color: white;
+      }
+      
+      h5 {
+        color: white;
+      }
+      
+      .fundoBranco {
+        background-color: #d4d4d4;
+        border-color: #1a1a1c;
+      }
+      
+      .ajustar{
+        width: 100%;
+        height: 80%;
+      }
