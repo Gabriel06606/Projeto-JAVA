@@ -8,11 +8,11 @@ public class GerenciadorTarefa {
     
 
     public void limparTarefasConcluidas() {
-
+        Tarefas.remove()
     }
     
     public void adicionarTarefa() {
-
+        Tarefas.add()
     }
     
     public void carregarTarefas() {
