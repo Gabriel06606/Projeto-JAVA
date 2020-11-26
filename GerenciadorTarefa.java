@@ -2,10 +2,9 @@ import java.util.ArrayList;
 
 public class GerenciadorTarefa {
     
-    RepositoriodeTarefas repo1 = new RepositoriodeTarefas() {
-    };
+    RepositoriodeTarefas tarefas1 = new RepositoriodeTarefas() {};
     
-    private ArrayList<Tarefa> Tarefas = new ArrayList<Tarefa>();
+    private ArrayList<Tarefa> Tarefas;
     
 
     public void limparTarefasConcluidas() {
@@ -28,7 +27,7 @@ public class GerenciadorTarefa {
 
     }
     
-    public void getTarefa( ) {
+    public void getTarefa(int indice) {
         
     }
 
