@@ -1,15 +1,17 @@
-class RepositoriodeTarefasDisco implements RepositoriodeTarefas {
+import java.util.ArrayList;
 
-public void salvarTarefas(Tarefa List<Tarefa>){}
+public class RepositoriodeTarefasDisco implements RepositoriodeTarefas {
 
 @Override
-public Tarefa salvarTarefas() {
-    ArrayList<Tarefa> Tarefas = new ArrayList<Tarefa>();
+public void salvarTarefas(ArrayList<Tarefa> tarefas) {
+    System.out.println("Aguarde... Salvando tarefas");
 }
 
 @Override
-public Tarefa carregarTarefas(){}
+public ArrayList<Tarefa> carregarTarefas() {
+    ArrayList<Tarefa> TarefasCarregadas = new ArrayList<>();
+    return TarefasCarregadas;
+}
 
-public carregarTarefas(){ }
 
 }

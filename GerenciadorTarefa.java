@@ -1,35 +1,40 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class GerenciadorTarefa {
-    
-    RepositoriodeTarefas repo1 = new RepositoriodeTarefas() {
-    };
-    
-    private ArrayList<Tarefa> Tarefas = new ArrayList<Tarefa>();
-    
+    private ArrayList<Tarefa> tarefas;
+    private ArrayList<Tarefa> tarefasConcluidas;
+    private RepositoriodeTarefasDisco repo;
 
-    public void limparTarefasConcluidas() {
-
+    public GerenciadorTarefa() {
+        this.tarefas = new ArrayList<>();
+        this.tarefasConcluidas = new ArrayList<>();
+        this.repo = new RepositoriodeTarefasDisco() {};
+        carregarTarefas();
     }
     
-    public void adicionarTarefa() {
-
+    public void limparTarefasConcluidas() {
+        tarefasConcluidas.clear();
+    }
+    
+    public void adicionarTarefa(String descricao, boolean concluida) {
+        Tarefa tarefa = new Tarefa(descricao, concluida);
+        tarefas.add(tarefa);
     }
     
     public void carregarTarefas() {
-
+        this.tarefas.addAll(repo.carregarTarefas());
     }
     
     public void salvarTarefas() {
-
+        repo.salvarTarefas(this.tarefas);
     }
     
     public void imprimirTarefas() {
-
+  
     }
     
-    public void getTarefa( ) {
-        
-    }
+    public void getTarefa() {
 
+    }
 }
