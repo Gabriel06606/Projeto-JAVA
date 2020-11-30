@@ -4,6 +4,8 @@ public class GerenciadorTarefa {
     private ArrayList<Tarefa> tarefas;
     private ArrayList<Tarefa> tarefasConcluidas;
     private RepositoriodeTarefasDisco repo;
+    private boolean concluida;
+    private String descricao;
 
     public GerenciadorTarefa() {
         this.tarefas = new ArrayList<>();
@@ -23,10 +25,10 @@ public class GerenciadorTarefa {
         System.out.println(descricao + "\n");
     }
 
-    // public void adicionarTarefaUrgente(String descricao, boolean concluida, int dias) {
-    //     TarefaUrgente tarefaurgent = new TarefaUrgente(descricao, concluida, dias);
-    //     tarefas.add(tarefaurgent);
-    // }
+    public void adicionarTarefaUrgente(String descricao, boolean concluida, int dias) {
+        TarefaUrgente tarefaurgent = new TarefaUrgente(descricao, concluida, dias);
+        tarefas.add(tarefaurgent);
+    }
     
     public void carregarTarefas() {
         this.tarefas.addAll(repo.carregarTarefas());
@@ -37,19 +39,13 @@ public class GerenciadorTarefa {
     }
     
     public void imprimirTarefas() {
-        Tarefa tarefa = new Tarefa();
+        Tarefa tarefa = new Tarefa(descricao, concluida);
         System.out.println(tarefa.descricao);
   
     }
-    
-    public void getTarefa() {
 
+    public void concluirTarefa() {
+        this.concluida = true ;
     }
-
-	public void adicionarTarefaUrgente(TarefaUrgente turgente) {
-	}
-
-	public void concluirTarefa() {
-        //Adicionar codigo p/ limpar
-	}
+    
 }

@@ -1,4 +1,4 @@
-import java.net.http.WebSocket.Listener;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -25,15 +25,15 @@ public class TarefasApp {
                     switch (input) {
                         case 1:
                             System.out.print("Descrição da tarefa: ");
-                            Scanner listener = new Scanner(System.in);
-                            String descricao = listener.nextLine();
-                            boolean concluida = listener.nextLine() != null;
+                            Scanner scan1 = new Scanner(System.in);
+                            String descricao = scan1.nextLine();
+                            boolean concluida = scan1.nextLine() != null;
                             gerenciador1.adicionarTarefa(descricao, concluida);
                             break;
                         case 2:
                             System.out.print("Descrição da tarefa: ");
-                            listener = new Scanner(System.in);
-                            descricao = listener.nextLine();
+                            scan1 = new Scanner(System.in);
+                            descricao = scan1.nextLine();
                             concluida = false;
                             break;
                         default:
@@ -61,20 +61,20 @@ public class TarefasApp {
 }
 
     private static int userInput() {
-        Scanner listener = new Scanner(System.in);
-        int c = 0;
+        Scanner scan1 = new Scanner(System.in);
+        int input = 0;
         try {
-            c = listener.nextInt();
+            input = scan1.nextInt();
         } catch (InputMismatchException e) {
             try {
-                c = Integer.getInteger(listener.nextLine());
+                input = Integer.getInteger(scan1.nextLine());
             } catch (Exception k) {
-                System.out.println("Utilize somente numeros inteiros");
+                System.out.println("Use numeros inteiros");
             }
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
-            return c;
+            return input;
         }
     }
 }
