@@ -47,7 +47,7 @@ public class TarefasApp {
 
                 break;
             case 4:
-                System.out.println(gerenciador1);
+                gerenciador1.imprimirTarefas();
                 break;
 
 
