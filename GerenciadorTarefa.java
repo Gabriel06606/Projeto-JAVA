@@ -19,8 +19,8 @@ public class GerenciadorTarefa {
     public void adicionarTarefa(String descricao, boolean concluida) {
         Tarefa tarefa = new Tarefa(descricao, false);
         tarefas.add(tarefa);
-        System.out.println("Descrições:\n");
-        System.out.println(descricao);
+        System.out.println("Tarefas::\n");
+        System.out.println(descricao + "\n");
     }
 
     // public void adicionarTarefaUrgente(String descricao, boolean concluida, int dias) {
