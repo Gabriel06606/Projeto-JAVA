@@ -29,10 +29,11 @@ public class TarefasApp {
                         System.out.print("Descrição da tarefa: ");
                         listener = new Scanner(System.in);
                         descricao = listener.nextLine();
+                        concluida = false;
                         System.out.print("Dias para concluir a tarefa: ");
-                        input = userInput();
-                        TarefaUrgente turgente = new TarefaUrgente(descricao, input);
-                        gerenciador1.adicionarTarefa(turgente);
+                        int dias = listener.nextLine();
+                        TarefaUrgente turgente = new TarefaUrgente(descricao, concluida, dias);
+                        gerenciador1.adicionarTarefaUrgente(turgente);
                         break;
                     default:
                         System.out.println("Opcao Invalida");
@@ -40,10 +41,10 @@ public class TarefasApp {
                 }
                 break;
             case 2:
-                g.concluiTarefa();
+            gerenciador1.concluirTarefa();
                 break;
             case 7:
-                g.limparTarefasConcluidas();
+                gerenciador1.limparTarefasConcluidas();
             default:
                 System.out.println("Opção Inválida!");
                 break;
