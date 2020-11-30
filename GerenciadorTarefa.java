@@ -21,6 +21,11 @@ public class GerenciadorTarefa {
         Tarefa tarefa = new Tarefa(descricao, concluida);
         tarefas.add(tarefa);
     }
+
+    public void adicionarTarefaUrgente(String descricao, boolean concluida, int dias) {
+        TarefaUrgente tarefaurgent = new TarefaUrgente(descricao, concluida, dias);
+        tarefas.add(tarefaurgent);
+    }
     
     public void carregarTarefas() {
         this.tarefas.addAll(repo.carregarTarefas());

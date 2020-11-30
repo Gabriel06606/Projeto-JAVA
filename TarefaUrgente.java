@@ -7,11 +7,11 @@ public class TarefaUrgente extends Tarefa {
         this.diasPraConcluir = diasPraConcluir;
     }
     
-    public int getDiasParaConcluir() {
+    public int getDiasPraConcluir() {
         return this.diasPraConcluir;
     }
     
-    public void setDiasParaConcluir(int dias){
+    public void setDiasPraConcluir(int dias){
         this.diasPraConcluir = dias;
     }
     
