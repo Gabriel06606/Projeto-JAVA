@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class GerenciadorTarefa {
     private ArrayList<Tarefa> tarefas;
@@ -42,4 +41,11 @@ public class GerenciadorTarefa {
     public void getTarefa() {
 
     }
+
+	public void adicionarTarefaUrgente(TarefaUrgente turgente) {
+	}
+
+	public void concluirTarefa() {
+        //Adicionar codigo p/ limpar
+	}
 }

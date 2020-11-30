@@ -2,12 +2,15 @@ public class TarefaUrgente extends Tarefa {
 
     public int diasPraConcluir;
     
-    public TarefaUrgente(String descricao, boolean concluida, int diasPraConcluir) {
+    public TarefaUrgente(String descricao, boolean concluida, int dias) {
         super(descricao, concluida);
-        this.diasPraConcluir = diasPraConcluir;
+        this.diasPraConcluir = dias;
     }
     
-    public int getDiasPraConcluir() {
+    public TarefaUrgente(String descricao, boolean concluida, String dias) {
+	}
+
+	public int getDiasPraConcluir() {
         return this.diasPraConcluir;
     }
     
