@@ -1,3 +1,5 @@
+import java.net.http.WebSocket.Listener;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class TarefasApp {
@@ -9,6 +11,7 @@ public class TarefasApp {
         System.out.println("1. Criar uma nova Tarefa    ");
         System.out.println("2. Marcar tarefa como Concluida ");
         System.out.println("3. Excluir tarefas Concluidas   ");
+        System.out.println("4. Listar tarefas    ");
         System.out.print("Digite a opção escolhida:  ");
         int input = userInput();
         switch (input) {
@@ -30,21 +33,24 @@ public class TarefasApp {
                         listener = new Scanner(System.in);
                         descricao = listener.nextLine();
                         concluida = false;
-                        System.out.print("Dias para concluir a tarefa: ");
-                        int dias = listener.nextLine();
-                        TarefaUrgente turgente = new TarefaUrgente(descricao, concluida, dias);
-                        gerenciador1.adicionarTarefaUrgente(turgente);
                         break;
                     default:
                         System.out.println("Opcao Invalida");
                         break;
                 }
                 break;
+
             case 2:
             gerenciador1.concluirTarefa();
                 break;
-            case 7:
-                gerenciador1.limparTarefasConcluidas();
+            case 3:
+
+                break;
+            case 4:
+                System.out.println(gerenciador1);
+                break;
+
+
             default:
                 System.out.println("Opção Inválida!");
                 break;
